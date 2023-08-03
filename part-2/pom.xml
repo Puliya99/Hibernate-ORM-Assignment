@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>part-2</artifactId>
+    <artifactId>part-2-OneToOne</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
