@@ -3,13 +3,11 @@ package org.example.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import lombok.*;
 
 import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 @ToString
@@ -21,4 +19,9 @@ public class Author {
     private String authorName;
     @OneToMany(mappedBy = "author")
     private List <Book> book;
+
+    public Author(String authorId, String authorName) {
+        this.authorId = authorId;
+        this.authorName = authorName;
+    }
 }
