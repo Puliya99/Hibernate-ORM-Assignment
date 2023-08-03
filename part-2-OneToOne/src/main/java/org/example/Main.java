@@ -8,10 +8,10 @@ import org.hibernate.Transaction;
 
 public class Main {
     public static void main(String[] args) {
-        Book book = new Book("B002","Gamperaliya","9789558415436");
+        Book book = new Book("B002","Magul Kama","9789554512115");
         Author author = new Author();
         author.setAuthorId("A001");
-        author.setAuthorName("Martin Wickramasinghe");
+        author.setAuthorName("Kumaratunga Munidasa");
         author.setBook(book);
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();

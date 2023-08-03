@@ -9,7 +9,7 @@ public class BookDAO {
     public void saveBook(Book book){
         book.setBookId("B001");
         book.setTitle("Madol Doova");
-        book.setIsbn("9789555640107");
+        book.setIsbn("9789555640106");
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         session.persist(book);
@@ -28,7 +28,7 @@ public class BookDAO {
     public void updateBook(Book book){
         book.setBookId("B001");
         book.setTitle("Madol Doova");
-        book.setIsbn("9789555640106");
+        book.setIsbn("9789555640107");
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         session.update(book);

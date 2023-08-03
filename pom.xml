@@ -10,7 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>part-1</module>
-        <module>part-2</module>
+        <module>part-2-OneToOne</module>
+        <module>part-2-OneToMany</module>
+        <module>part-2-ManyToMany</module>
     </modules>
 
     <properties>
